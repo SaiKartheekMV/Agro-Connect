@@ -4,7 +4,7 @@ import img2 from '../assets/image2.jpg';
 import img3 from '../assets/image3.webp';
 import './Home.css';
 
-const API_KEY = 'pub_57429c0db711704473f18d27f92a0ac7cbc35';
+const API_KEY = 'f8d4ce20e8a64e57b4237741925d754e';
 
 const Home = () => {
   const [articles, setArticles] = useState([]);
@@ -20,7 +20,7 @@ const Home = () => {
     const fetchNews = async () => {
       try {
         const response = await fetch(
-          `https://newsdata.io/api/1/latest?apikey=${API_KEY}&q=agriculture&country=in`
+          `https://newsapi.org/v2/everything?q=agriculture%20India&language=en&apiKey=${API_KEY}`
         );
         if (!response.ok) {
           throw new Error('Network response was not ok');
