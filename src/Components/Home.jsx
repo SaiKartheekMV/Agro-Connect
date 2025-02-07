@@ -4,7 +4,7 @@ import img2 from '../assets/image2.jpg';
 import img3 from '../assets/image3.webp';
 import './Home.css';
 
-const API_KEY = '41c7b552c3594d4584d441bf8fb3d473';
+const API_KEY = 'f8d4ce20e8a64e57b4237741925d754e';
 
 const Home = () => {
   const [articles, setArticles] = useState([]);
