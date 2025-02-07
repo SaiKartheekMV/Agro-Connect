@@ -1,0 +1,95 @@
+/* General Navbar Styles */
+.navbar {
+  background-color: #4CAF50; /* Fresh Green */
+  padding: 10px 20px;
+  position: relative;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  z-index: 100;
+}
+
+.navbar-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1300px;
+  margin: 0 auto;
+}
+
+.logo {
+  font-size: 2em;
+  color: #FFF8DC; /* Off-white */
+  font-family: 'Pacifico', cursive; /* Adds an earthy and organic feel */
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+/* Nav Links */
+.nav-links {
+  display: flex;
+  list-style: none;
+  gap: 30px;
+  margin: 0;
+}
+
+.nav-links li a {
+  color: #FFF8DC;
+  font-size: 1.2em;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 10px 15px;
+  text-decoration: none;
+  border-radius: 10px;
+  transition: all 0.3s ease;
+}
+
+.nav-links li a:hover {
+  background-color: #8BC34A; /* Brighter Green */
+  color: #333;
+}
+
+.nav-links li.active a {
+  background-color: #FFD700; /* Gold for active links */
+  color: #333;
+}
+
+/* Mobile Menu */
+.mobile-menu-icon {
+  display: none;
+  font-size: 2.5em;
+  color: #FFF8DC;
+  cursor: pointer;
+}
+
+.nav-links-mobile {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  background-color: #4CAF50;
+  padding: 20px;
+  position: absolute;
+  top: 60px;
+  right: 0;
+  width: 100%;
+  z-index: 99;
+}
+
+.nav-links-mobile li {
+  width: 100%;
+}
+
+.nav-links-mobile li a {
+  width: 100%;
+  padding: 15px 10px;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .nav-links {
+    display: none;
+  }
+
+  .mobile-menu-icon {
+    display: block;
+  }
+}

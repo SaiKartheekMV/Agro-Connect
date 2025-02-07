@@ -1,0 +1,17 @@
+/* Footer Styles */
+footer {
+    background-color: #8D5524; /* Secondary Brown */
+    color: #FFFFFF; /* White Text */
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 50px;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+  }
+  
+  footer p {
+    margin: 0;
+    font-size: 0.9em;
+  }
+  

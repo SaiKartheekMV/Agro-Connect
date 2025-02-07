@@ -1,0 +1,14 @@
+.create-post {
+    padding: 1em;
+}
+
+.create-post input,
+.create-post textarea {
+    width: 100%;
+    padding: 0.5em;
+    margin: 0.5em 0;
+}
+
+.create-post button {
+    padding: 0.5em 1em;
+}

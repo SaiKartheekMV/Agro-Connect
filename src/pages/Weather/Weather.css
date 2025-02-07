@@ -1,0 +1,124 @@
+/* Global Styles */
+/*body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #e9f5e9;
+  color: #334d4d;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}*/
+
+/* Container for the entire weather component */
+/* Center the container */
+
+@import url('https://unpkg.com/leaflet/dist/leaflet.css');
+.weatherContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  max-width: 600px;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin: 0 auto;
+}
+
+/* Form styles */
+.weatherForm {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.cityInput {
+  padding: 12px;
+  border: 1px solid #a3c1a3; /* Earthy green border */
+  border-radius: 8px;
+  font-size: 1rem;
+  width: 100%;
+  background-color: #faf9f4; /* Light background color */
+  width: 400px;
+}
+
+.submitButton {
+  padding: 12px;
+  background-color: #ff9900; /* Fresh green for agriculture */
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.submitButton:hover {
+  background-color: #cc7a00; /* Darker green on hover */
+}
+
+/* Error message */
+.error {
+  background-color: #ffe6e6;
+  color: #b30000;
+  padding: 10px;
+  border-radius: 8px;
+  margin-top: 10px;
+}
+
+/* Weather card styles */
+.weatherCard {
+  margin-top: 20px;
+  padding: 20px;
+  background: linear-gradient(135deg, #f5f5dc, #e3eaa7); /* Soft agricultural theme */
+  border-radius: 12px;
+  text-align: center;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  width: 100%;
+}
+
+.weatherCard h2 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+  color: #2e4600; /* Dark earthy color */
+}
+
+.weatherCard p {
+  font-size: 1.2rem;
+  margin: 5px 0;
+  color: #4e7342; /* Soft green tone */
+}
+
+.emoji {
+  font-size: 4rem;
+  margin-top: 15px;
+}
+
+
+.weatherCard {
+  margin-top: 20px;
+  padding: 20px;
+  background: linear-gradient(135deg, #f5f5dc, #e3eaa7); /* Soft agricultural theme */
+  border-radius: 12px;
+  text-align: center;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  width: 100%;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+  .weatherContainer {
+    padding: 15px;
+  }
+
+  .cityInput, .submitButton {
+    font-size: 0.9rem;
+  }
+
+  .weatherCard h2 {
+    font-size: 1.8rem;
+  }
+}

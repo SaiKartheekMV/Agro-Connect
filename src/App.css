@@ -1,0 +1,227 @@
+/* Global Styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+    margin: 0;
+    color: #333;
+    line-height: 1.6;
+}
+
+.container {
+    max-width: 900px;
+    margin: 2rem auto;
+    padding: 1.5rem;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Forum Component */
+.forum-container {
+    text-align: center;
+}
+
+.forum-title {
+    font-size: 2.5rem;
+    color: #007bff;
+    margin-bottom: 1.5rem;
+}
+
+/* Create Post Component */
+.create-post {
+    margin: 2rem 0;
+}
+
+.create-post h2 {
+    font-size: 1.8rem;
+    color: #333;
+}
+
+.create-post input[type="text"],
+.create-post textarea {
+    width: 100%;
+    padding: 0.8rem;
+    margin: 0.5rem 0;
+    font-size: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.create-post input[type="text"]:focus,
+.create-post textarea:focus {
+    border-color: #007bff;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.2);
+}
+
+.create-post button {
+    font-size: 1rem;
+    padding: 0.7rem 1.5rem;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.create-post button:hover {
+    background-color: #0056b3;
+}
+
+/* Post List Component */
+.post-list h2 {
+    font-size: 2rem;
+    color: #333;
+}
+
+.post-list ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.post-list li {
+    margin: 1rem 0;
+    background-color: #f8f9fa;
+    padding: 1rem;
+    border-radius: 6px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.post-list li a {
+    color: #007bff;
+    text-decoration: none;
+    font-size: 1.2rem;
+}
+
+.post-list li a:hover {
+    text-decoration: underline;
+}
+
+/* Post Detail Component */
+.post-detail h2 {
+    font-size: 2.2rem;
+    margin-bottom: 1rem;
+    color: #333;
+}
+
+.post-detail p {
+    font-size: 1.1rem;
+    color: #555;
+    margin-bottom: 1.5rem;
+}
+
+.post-detail button {
+    font-size: 1rem;
+    padding: 0.6rem 1.2rem;
+    margin: 0.5rem 0.3rem;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.post-detail button:nth-of-type(1) {
+    background-color: #28a745;
+    color: #fff;
+}
+
+.post-detail button:nth-of-type(2) {
+    background-color: #dc3545;
+    color: #fff;
+}
+
+.post-detail button:hover {
+    opacity: 0.9;
+}
+
+/* Comment Section Component */
+.comment-section {
+    margin-top: 2rem;
+    background-color: #f8f9fa;
+    padding: 1rem;
+    border-radius: 8px;
+}
+
+.comment-section h3 {
+    font-size: 1.5rem;
+    color: #333;
+    margin-bottom: 1rem;
+}
+
+.comment-section ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.comment-section li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #ffffff;
+    padding: 0.8rem;
+    margin: 0.5rem 0;
+    border-radius: 6px;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+.comment-section li button {
+    background-color: #dc3545;
+    color: #fff;
+    padding: 0.3rem 0.8rem;
+    border-radius: 4px;
+    font-size: 0.8rem;
+}
+
+.comment-section input[type="text"] {
+    width: calc(100% - 3rem);
+    font-size: 1rem;
+    padding: 0.6rem;
+    margin-top: 0.5rem;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    outline: none;
+}
+
+.comment-section input[type="text"]:focus {
+    border-color: #007bff;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.2);
+}
+
+.comment-section button {
+    background-color: #007bff;
+    color: #fff;
+    padding: 0.5rem 1rem;
+    border-radius: 6px;
+    margin-top: 0.5rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.comment-section button:hover {
+    background-color: #0056b3;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .container {
+        padding: 1rem;
+    }
+
+    .forum-title, 
+    .post-detail h2, 
+    .post-list h2 {
+        font-size: 1.8rem;
+    }
+
+    .create-post button,
+    .post-detail button,
+    .comment-section button {
+        font-size: 0.9rem;
+        padding: 0.5rem 1rem;
+    }
+
+    .comment-section input[type="text"] {
+        width: 100%;
+    }
+}

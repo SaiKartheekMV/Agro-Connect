@@ -1,0 +1,255 @@
+[
+    {
+      "id": 10,
+      "state": "Karnataka",
+      "soilType": "Red and Lateritic",
+      "crops": [
+        {
+          "name": "Ragi (Finger Millet)",
+          "sunRequirements": "Full Sun",
+          "sowingMethod": "Direct Seeding",
+          "rowSpacing": "20 cm"
+        },
+        {
+          "name": "Coffee",
+          "sunRequirements": "Partial Sun",
+          "sowingMethod": "Sapling Planting",
+          "rowSpacing": "1.5 meters"
+        },
+        {
+          "name": "Sugarcane",
+          "sunRequirements": "Full Sun",
+          "sowingMethod": "Ratooning",
+          "rowSpacing": "30 cm"
+        }
+      ]
+    },
+    {
+      "id": 11,
+      "state": "Madhya Pradesh",
+      "soilType": "Black Cotton",
+      "crops": [
+        {
+          "name": "Wheat",
+          "sunRequirements": "Full Sun",
+          "sowingMethod": "Direct Seeding",
+          "rowSpacing": "20 cm"
+        },
+        {
+          "name": "Soybean",
+          "sunRequirements": "Partial Sun",
+          "sowingMethod": "Direct Seeding",
+          "rowSpacing": "25 cm"
+        },
+        {
+          "name": "Gram",
+          "sunRequirements": "Full Sun",
+          "sowingMethod": "Direct Seeding",
+          "rowSpacing": "20 cm"
+        }
+      ]
+    },
+    {
+      "id": 12,
+      "state": "Odisha",
+      "soilType": "Red and Lateritic",
+      "crops": [
+        {
+          "name": "Rice",
+          "sunRequirements": "Full Sun",
+          "sowingMethod": "Transplanting",
+          "rowSpacing": "20 cm"
+        },
+        {
+          "name": "Groundnut",
+          "sunRequirements": "Full Sun",
+          "sowingMethod": "Direct Seeding",
+          "rowSpacing": "20 cm"
+        },
+        {
+          "name": "Jute",
+          "sunRequirements": "Full Sun",
+          "sowingMethod": "Broadcast Seeding",
+          "rowSpacing": "30 cm"
+        }
+      ]
+    },
+    {
+      "id": 13,
+      "state": "Telangana",
+      "soilType": "Red and Black Soil",
+      "crops": [
+        {
+          "name": "Rice",
+          "sunRequirements": "Full Sun",
+          "sowingMethod": "Transplanting",
+          "rowSpacing": "20 cm"
+        },
+        {
+          "name": "Maize",
+          "sunRequirements": "Full Sun",
+          "sowingMethod": "Direct Seeding",
+          "rowSpacing": "25 cm"
+        },
+        {
+          "name": "Cotton",
+          "sunRequirements": "Full Sun",
+          "sowingMethod": "Direct Seeding",
+          "rowSpacing": "30 cm"
+        }
+      ]
+    },
+    {
+      "id": 14,
+      "state": "Andhra Pradesh",
+      "soilType": "Red and Alluvial",
+      "crops": [
+        {
+          "name": "Rice",
+          "sunRequirements": "Full Sun",
+          "sowingMethod": "Transplanting",
+          "rowSpacing": "20 cm"
+        },
+        {
+          "name": "Tobacco",
+          "sunRequirements": "Full Sun",
+          "sowingMethod": "Direct Seeding",
+          "rowSpacing": "30 cm"
+        },
+        {
+          "name": "Banana",
+          "sunRequirements": "Partial Sun",
+          "sowingMethod": "Sapling Planting",
+          "rowSpacing": "2 meters"
+        }
+      ]
+    },
+    {
+      "id": 15,
+      "state": "Bihar",
+      "soilType": "Alluvial",
+      "crops": [
+        {
+          "name": "Paddy",
+          "sunRequirements": "Full Sun",
+          "sowingMethod": "Transplanting",
+          "rowSpacing": "20 cm"
+        },
+        {
+          "name": "Maize",
+          "sunRequirements": "Full Sun",
+          "sowingMethod": "Direct Seeding",
+          "rowSpacing": "25 cm"
+        },
+        {
+          "name": "Wheat",
+          "sunRequirements": "Full Sun",
+          "sowingMethod": "Direct Seeding",
+          "rowSpacing": "20 cm"
+        }
+      ]
+    },
+    {
+      "id": 16,
+      "state": "Delhi",
+      "soilType": "Alluvial",
+      "crops": [
+        {
+          "name": "Wheat",
+          "sunRequirements": "Full Sun",
+          "sowingMethod": "Direct Seeding",
+          "rowSpacing": "20 cm"
+        },
+        {
+          "name": "Mustard",
+          "sunRequirements": "Full Sun",
+          "sowingMethod": "Direct Seeding",
+          "rowSpacing": "15 cm"
+        },
+        {
+          "name": "Vegetables (Seasonal)",
+          "sunRequirements": "Full Sun",
+          "sowingMethod": "Direct Seeding",
+          "rowSpacing": "10-20 cm"
+        }
+      ]
+    },
+    {
+      "id": 17,
+      "state": "Himachal Pradesh",
+      "soilType": "Mountain Soil",
+      "crops": [
+        {
+          "name": "Apple",
+          "sunRequirements": "Partial Sun",
+          "sowingMethod": "Sapling Planting",
+          "rowSpacing": "5 meters"
+        },
+        {
+          "name": "Wheat",
+          "sunRequirements": "Full Sun",
+          "sowingMethod": "Direct Seeding",
+          "rowSpacing": "20 cm"
+        },
+        {
+          "name": "Maize",
+          "sunRequirements": "Full Sun",
+          "sowingMethod": "Direct Seeding",
+          "rowSpacing": "25 cm"
+        }
+      ]
+    },
+    {
+      "id": 18,
+      "state": "Jammu and Kashmir",
+      "soilType": "Mountain and Alluvial",
+      "crops": [
+        {
+          "name": "Saffron",
+          "sunRequirements": "Full Sun",
+          "sowingMethod": "Tuber Planting",
+          "rowSpacing": "15 cm"
+        },
+        {
+          "name": "Apple",
+          "sunRequirements": "Partial Sun",
+          "sowingMethod": "Sapling Planting",
+          "rowSpacing": "5 meters"
+        },
+        {
+          "name": "Rice",
+          "sunRequirements": "Full Sun",
+          "sowingMethod": "Transplanting",
+          "rowSpacing": "20 cm"
+        }
+      ]
+    },
+    {
+      "id":19,
+      "state":"TamilNadu",
+      "soilType":"Red and Black Soil",
+      "crops":[
+        {
+          "name": "Rice",
+          "sunRequirements": "Full Sun",
+          "sowingMethod": "Transplanting",
+          "rowSpacing": "20 cm"
+        },
+        {
+          "name": "Cocnut",
+          "sunRequirements": "Full Sun",
+          "sowingMethod": "Direct Planting",
+          "rowSpacing": "5 meters"
+        },
+        {
+          "name": "Sugarcane",
+          "sunRequirements": "Full Sun",
+          "sowingMethod": "Rootning",
+          "rowSpacing": "35 cm"
+        }
+      ]
+    }
+  ]
+  
+
+  

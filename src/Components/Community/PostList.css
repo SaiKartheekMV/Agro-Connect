@@ -1,0 +1,12 @@
+.post-list {
+    padding: 1em;
+}
+
+.post-list ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.post-list li {
+    margin: 0.5em 0;
+}

@@ -1,0 +1,149 @@
+/* Home Page Styles */
+.home {
+  font-family: 'Poppins', sans-serif;
+  color: #333;
+}
+
+.slider {
+  position: relative;
+  height: 50vh;
+  overflow: hidden;
+}
+
+.slider img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  animation: fadeIn 2s ease-in-out;
+}
+
+.overlay {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: #F4EBD0;
+  background: rgba(0, 0, 0, 0.4); /* More transparent */
+  padding: 15px 25px; /* Slightly smaller padding */
+  border-radius: 15px; /* More rounded corners */
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2); /* Subtle shadow */
+  width: 80%; /* Ensure it adjusts well to different screen sizes */
+  max-width: 600px; /* Set a max width */
+}
+
+.overlay h1 {
+  font-size: 2.5em; /* Smaller but still bold */
+  margin-bottom: 15px;
+  color: #FFFBEA; /* Softer white */
+}
+
+.overlay p {
+  font-size: 1em; /* Smaller text size */
+  margin-top: 8px;
+  color: #E0D4C1; /* Softer beige */
+}
+
+
+.news-section {
+  padding: 50px 20px;
+  background: #F4EBD0;
+}
+
+.section-heading {
+  font-size: 2.5em;
+  color: #6A994E;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.card-slider {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.news-cards {
+  display: flex;
+  gap: 15px;
+  justify-content: center;
+  overflow-x: hidden;
+}
+
+.news-card {
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  width: 280px;
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+  .news-card:hover {
+    transform: translateY(-5px);
+    outline: none;
+    border: 1px solid #6A994E;
+  }
+
+.news-card img {
+  width: 100%;
+  height: 180px;
+  border-radius: 10px 10px 0 0;
+  object-fit: cover;
+}
+
+.news-card h4 {
+  font-size: 1.2em;
+  padding: 15px 10px;
+}
+
+.news-description {
+  padding: 0 10px;
+  color: #555;
+}
+
+.read-more {
+  display: block;
+  margin: 15px 0;
+  color: #6A994E;
+  text-decoration: none;
+}
+
+.read-more:hover {
+  text-decoration: underline;
+}
+
+.card-button {
+  background-color: transparent;
+  border: none;
+  font-size: 2rem;
+  color: #6A994E;
+  cursor: pointer;
+}
+
+.card-button:hover {
+  color: #A7C957;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .overlay h1 {
+    font-size: 2.5em;
+  }
+  
+  .news-card {
+    width: 90%;
+  }
+}
+
+
