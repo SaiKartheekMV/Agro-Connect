@@ -4,7 +4,7 @@ import img2 from '../assets/image2.jpg';
 import img3 from '../assets/image3.webp';
 import './Home.css';
 
-const API_KEY = import.meta.env.VITE_NEWS_API;
+const API_KEY = import.meta.env.VITE_NEW_API;
 
 
 const Home = () => {
