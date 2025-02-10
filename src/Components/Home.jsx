@@ -1,10 +1,11 @@
-import { useState, useEffect } from 'react';
+import { useState, useEffect, useRef } from 'react';
 import img1 from '../assets/image1.jpg';
 import img2 from '../assets/image2.jpg';
 import img3 from '../assets/image3.webp';
 import './Home.css';
 
-const API_KEY = 'f8d4ce20e8a64e57b4237741925d754e';
+const API_KEY = import.meta.env.VITE_NEWS_API_KEY;
+
 
 const Home = () => {
   const [articles, setArticles] = useState([]);
@@ -12,8 +13,9 @@ const Home = () => {
   const [error, setError] = useState(null);
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
   const [currentCardIndex, setCurrentCardIndex] = useState(0);
+  const intervalRef = useRef(null);
+  
   const images = [img1, img2, img3];
-
   const cardsToShow = 4;
 
   useEffect(() => {
@@ -22,14 +24,13 @@ const Home = () => {
         const response = await fetch(
           `https://newsapi.org/v2/everything?q=agriculture%20India&language=en&apiKey=${API_KEY}`
         );
-        if (!response.ok) {
-          throw new Error('Network response was not ok');
-        }
+        if (!response.ok) throw new Error('Failed to fetch news');
+        
         const data = await response.json();
-        setArticles(data.articles);
-        setLoading(false);
-      } catch (error) {
-        setError(error);
+        setArticles(data.articles || []);
+      } catch (err) {
+        setError(err);
+      } finally {
         setLoading(false);
       }
     };
@@ -38,17 +39,16 @@ const Home = () => {
   }, []);
 
   useEffect(() => {
-    const interval = setInterval(() => {
-      setCurrentImageIndex((prevIndex) =>
-        prevIndex === images.length - 1 ? 0 : prevIndex + 1
-      );
+    intervalRef.current = setInterval(() => {
+      setCurrentImageIndex((prevIndex) => (prevIndex + 1) % images.length);
     }, 3000);
-    return () => clearInterval(interval);
+    
+    return () => clearInterval(intervalRef.current);
   }, [images.length]);
 
   const prevCard = () => {
     setCurrentCardIndex((prevIndex) =>
-      prevIndex === 0 ? articles.length - cardsToShow : prevIndex - cardsToShow
+      prevIndex === 0 ? Math.max(articles.length - cardsToShow, 0) : prevIndex - cardsToShow
     );
   };
 
@@ -58,13 +58,8 @@ const Home = () => {
     );
   };
 
-  if (loading) {
-    return <p>Loading news...</p>;
-  }
-
-  if (error) {
-    return <p>Error fetching news: {error.message}</p>;
-  }
+  if (loading) return <p>Loading news...</p>;
+  if (error) return <p>Error fetching news: {error.message}</p>;
 
   return (
     <div className="home">
@@ -78,13 +73,13 @@ const Home = () => {
         </p>
       </div>
       <div className="news-section">
-        <h2 className="section-heading">Latest in Agriculture</h2>
+        <h2 className="font-sans text-3xl text-black font-bold">Agricultural News</h2>
         <div className="card-slider">
-          <button onClick={prevCard} className="card-button">❮</button>
+          <button onClick={prevCard} className="px-4 py-6 mx-6 my-4 w-11 card-button">❮</button>
           <div className="news-cards">
             {articles.slice(currentCardIndex, currentCardIndex + cardsToShow).map((article, index) => (
               <div className="news-card" key={index}>
-                {article.urlToImage && <img src={article.urlToImage} alt="Article Image" className="news-image" />}
+                {article.urlToImage && <img src={article.urlToImage} alt={article.title} className="news-image" />}
                 <h4>{article.title}</h4>
                 <p className="news-description">
                   {article.description ? article.description.substring(0, 100) + '...' : 'No description available.'}
@@ -95,7 +90,7 @@ const Home = () => {
               </div>
             ))}
           </div>
-          <button onClick={nextCard} className="card-button">❯</button>
+          <button onClick={nextCard} className="px-4 py-6 mx-6 my-4 w-11 card-button">❯</button>
         </div>
       </div>
     </div>
@@ -103,10 +98,3 @@ const Home = () => {
 };
 
 export default Home;
-
-
-
-
-//<h2 className='font-sans text-3xl text-black font-bold' >Agricultural News</h2>
-
-//<button onClick={prevCard} className="px-4 py-6 mx-6 my-4 w-11 card-button">❮</button>
