@@ -6,6 +6,7 @@ import './Home.css';
 
 const API_KEY = import.meta.env.VITE_NEW_API;
 
+console.log(API_KEY);
 
 const Home = () => {
   const [articles, setArticles] = useState([]);
